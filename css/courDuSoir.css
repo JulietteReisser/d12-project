@@ -101,11 +101,15 @@ pictuR .title .cont2{
 }
 
 .box1 .title {
-
+    grid-area: "aa";
  }
 
-.box1 .pictuR{
+.box1 .cont2{
+    grid-area: "ba";
+}
 
+.box1 .pictuR{
+    grid-area: "bb";
 }
 
 
