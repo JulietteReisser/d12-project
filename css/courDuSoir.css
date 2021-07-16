@@ -44,12 +44,7 @@ body{
     grid-area: "c";
     background-color: #168AAD;
     margin-bottom: 10px;
-
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    grid-area: "aa aa"
-                "ba bb";
+    
 }
 
 .box2 {
@@ -101,15 +96,15 @@ pictuR .title .cont2{
 }
 
 .box1 .title {
-    grid-area: "aa";
+    grid-area: aa;
  }
 
 .box1 .cont2{
-    grid-area: "ba";
+    grid-area: ba;
 }
 
 .box1 .pictuR{
-    grid-area: "bb";
+    grid-area: bb;
 }
 
 
@@ -118,10 +113,6 @@ pictuR .title .cont2{
     background-color: #D9ED92;
     color: #168AAD;
     padding: 10px;
-}
-
-.title{
-    grid-area: "1";
 }
 
 span {
