@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./nav_footer.css">
         <link rel="stylesheet" href="./technologie.css">
         <title>Programme technologique</title>
     </head>
@@ -14,15 +13,15 @@
                 </div>
     
                 <div class="onglets">
-                    <a href="#">Acceuil</a>
+                    <a href="index.html">Acceuil</a>
                     <a class="programmes" href="">Programmes 
                         <ul class="sousMenu">
-                            <li href="#">Programmes technologiques</li>
-                            <li href="#">Programmes écologiques</li>
+                            <li class="lien1">Programmes technologiques</li>
+                            <li class="lien2">Programmes écologiques</li>
                         </ul>
                     </a>
-                    <a href="#engagements">Nos Engagements</a>
-                    <a href="#contact">Contact</a>
+                    <a href="engagements.html">Nos Engagements</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </nav>
         </header>
@@ -59,20 +58,20 @@
                             <img src="./img/jason-blackeye-10ui0BryWK8-unsplash.jpg" alt="">
                         </div>
                         <div class="right">
-                            <h1 class="program">La conduite de drone</h1>
+                            <h1 class="program">Conduite de drone</h1>
                             <br>
-                            <p>apprentissage et maitrise du pilotage de dronde</p>
+                            <p>Apprentissage et maitrise du pilotage de drone.</p>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="left">
-                            <h1 class="program">l'élevage robotique</h1>
+                            <h1 class="program">Excursion Spatiale</h1>
                             <br>
                             <p>Fabrication et éducation de robots domestique et d'aide agricole. </p>
                         </div>
                         <div class="right">
-                            <img src="./img/pedro-tavares-santos-2.jpg" alt="">
+                            <img src="./img/longque-chen-fly-space-mech-final-painting-33-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -88,10 +87,9 @@
             
             <div class="block2">
                 <ul>
-                    <li><a href="">Acceuil</a></li>
-                    <li><a href="">Programmes</a></li>
-                    <li><a href="">Nos Engagement</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="engagements.html">Nos Engagement</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
                 
@@ -108,4 +106,18 @@
             <p class="copyright">Copyright © 2021 Tommorow school. All rights reserved.</p>
         </footer>
     </body>
+    <script>
+        const lien1 = document.querySelector('.lien1');
+        const lien2 = document.querySelector('.lien2');
+
+        lien1.addEventListener("click" , ()=>{
+            console.log("ok")
+            document.location.href="technologie.html"; 
+            
+        });
+        lien2.addEventListener("click" , ()=>{
+            document.location.href="ecologique.html"; 
+        });
+    </script>
+
 </html>
