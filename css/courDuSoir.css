@@ -1,0 +1,146 @@
+/* color
+ 168AAD bleu
+ 76C893 vert
+ D9ED92 jaune
+ EDF7FC gris
+ */
+/* page */
+html {
+    font-family: 'dosis', sans-serif;
+    color: #EDF7FC;
+}
+
+body{
+    margin: 15px;
+    padding: 0;
+    background-color: white;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    grid-area: "a" "b" "c" "d" "e" "f";
+}
+
+.titre0{
+    grid-area: "a";
+    color: #168AAD;
+    font-size: 30px;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bolder;
+    justify-self: center;
+}
+
+/* box */
+
+.box0 {
+    grid-area: "b";
+    background-color: #168AAD;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    grid-area: "c";
+    background-color: #168AAD;
+    margin-bottom: 10px;
+    
+}
+
+.box2 {
+    grid-area: "d";
+    margin-bottom: 10px;
+    background-color: #EDF7FC;
+}
+
+.box3 {
+    grid-area: "e";
+    background-color: #168AAD;
+    margin-bottom: 10px;
+}
+
+.box4 {
+    grid-area: "f";
+    background-color: #168AAD;
+    margin-bottom: 10px;
+}
+
+.box1 h1 .box3 h1{
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bolder;
+    color: #168AAD;
+    font-size: 25px;
+}
+
+.box2 h1 {
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bolder;
+    color: #168AAD;
+    font-size: 25px;
+}
+
+box4 h2 {
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bolder;
+    color: #EDF7FC;
+    font-size: 20px;
+}
+/* sous box*/
+
+pictuR .title .cont2{
+    background-color: #D9ED92;
+}
+
+.pictuR{
+    margin-top: 10px;
+}
+
+.box1 .title {
+    grid-area: aa;
+ }
+
+.box1 .cont2{
+    grid-area: ba;
+}
+
+.box1 .pictuR{
+    grid-area: bb;
+}
+
+
+/* assets*/
+.cont2{
+    background-color: #D9ED92;
+    color: #168AAD;
+    padding: 10px;
+}
+
+span {
+    border: 1px;
+    background-color: #76C893 ;
+    color: #168AAD ;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.pict{
+    margin-top: 10px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.cyb{
+    color: #168AAD;
+}
+
+select{
+    background-color: #D9ED92;
+}
+
+button{
+    background-color: #76C893;
+}
+
