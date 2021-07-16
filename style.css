@@ -3,51 +3,152 @@
 }
 
 body{
-    margin: 0;
+    margin: 15px;
     padding: 0;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas: 
+        "a1"
+        "a2";
+}
+
+h1{
+    font-family: 'Otomanopee One', sans-serif;
+    justify-self: center;
 }
 
 h3{
-    background-color: white;
+    font-family: 'Otomanopee One', sans-serif;
     width: 100%;
+    background-color: white;
+}
+
+h4{
+    font-family: 'Otomanopee One', sans-serif;
+    margin: 1px;
+}
+
+.titre0{
+    grid-area: a1;
+    justify-self: center;
 }
 
 .display{
+    grid-area: a2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    grid-template-rows: 1fr 50px 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-        "a b"
-        "c c"
-        "d e"
+        "a a"
+        "c d"
     ;
 }
 
 .c1{
     grid-area: a;
-    background-color: blue;
+    background-color: #EDF7FC;
 }
 
-.c2{    
-    grid-area: b;
-    background-color: red;
+.titre1{
+    grid-area: aa;
+    padding-left: 10px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "aa aa"
+        "ba bb"
+        "cc cc";
+}
+
+form input{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+form textarea{
+    padding: 5px;
+    border: 2px;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+.cont1{
+    grid-area: ba;
+    justify-self: center;
+}
+
+.cont2{
+    grid-area: bb;
+    justify-self: center;
+}
+
+.cont3{
+    grid-area: cc;
+    justify-self: center;
+    padding-bottom: 5px;
+}
+
+.cont3 button{
+    font-family: 'Otomanopee One', sans-serif;
+    background-color: #D9ED92;
+    border-radius: 5px;
+    border: 1px groove #168AAD;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #76C893;
 }
 
 .c3{
-    justify-self: center;
-    align-self: center;
     grid-area: c;
-    background-color: yellow;
+    background-color: #76C893;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+        "aaaa aaaa"
+        "bbbb bbbb";
+}
+
+.titre2{
+    grid-area: aaaa;
+    padding-left: 10px;
 }
 
 .c4{
     grid-area: d;
-    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "aaa aaa"
+        "caa cbb";
+    background-color: #168AAD;
 }
 
-.c5{
-    grid-area: e;
-    background-color: grey;
+.titre3{
+    padding-left: 10px;
+    grid-area: aaa;
+}
+
+.coord1{
+    padding: 5px;
+    grid-area: caa;
+}
+
+.coord2{
+    padding: 5px;
+    grid-area: cbb;
 }
