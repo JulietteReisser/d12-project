@@ -1,0 +1,30 @@
+html {
+	color: #EDF7FC;
+	height: 100%;
+}
+
+body {
+	color: #EDF7FC;
+	margin: 0;
+}
+
+.main-block {
+	background-color: #168AAD;
+	bottom: 75px;
+	padding: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	position: fixed;
+	width: 100%;
+}
+
+.arrow-block {
+	align-items: center;
+	background-color: #EDF7FC;
+	bottom: 0;
+	color: #168AAD;
+	height: 75px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
