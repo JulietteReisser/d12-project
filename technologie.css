@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+    color: #EDF7FC;
+	height: 100%;
+}
+nav{
+    background-color: #168AAD;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid #EDF7FC;
+    width:100%;
+    height:70px;
+    position: relative;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+nav img{
+    width:40px;
+    padding-top:5px ;
+    filter:brightness(500%);
+}
+nav h1{
+    color: #EDF7FC;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    cursor:pointer;
+}
+nav .logo:hover{
+    animation : bounce 1s  ;
+}
+
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #EDF7FC;
+    margin-right: 10px;
+    border-bottom: 1px solid #168AAD;
+    padding-bottom: 5px;
+    font-family: 'Otomanopee One', sans-serif;
+
+}
+nav .onglets a:hover{
+    color:#0c4050;
+}
+.programmes:hover .sousMenu{
+    display:block;
+    position:absolute;
+    top:76%;
+    left:65%;
+    z-index: 1;
+    background: #168AAD;
+    color:#fff;
+}
+.sousMenu{
+    display:none;
+
+}
+.sousMenu:hover{
+    display:block;
+}
+.sousMenu li{
+    margin:20px;
+}
+.sousMenu li:hover{
+    color:#0c4050;
+}
+
+footer .services .service{
+    margin-right: 30px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+}
+
+@keyframes bounce {
+    0% { transform: scale(1) translateY(0); }
+    10% { transform: scale(1.2, 0.6); }
+    30% { transform: scale(0.8, 1.1) translateY(-5px); }
+    50% { transform: scale(1) translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+footer{
+    
+
+    background-color: #168AAD;
+    color: #EDF7FC;
+    
+    height:400px;
+    font-family:sans-serif ;
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+.copyright{
+    position:absolute;
+    bottom:10%;
+    display:block;
+    width:100%;
+    text-align: center;
+}
+
+footer img{
+    width:100px;
+    filter: brightness(500%);
+    padding-top:5px;
+    
+}
+.footerLogo h1{
+    
+}
+
+.footerLogo{
+    display:flex;
+    font-size:4rem;
+    align-items: center;
+    justify-content: center;
+    height:100%
+}
+.block1, .block2, .block3 {
+    width:33%;
+}
+.block2{
+    display:flex;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+}
+.block2 ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:1rem;
+    
+}
+.block2 ul li{
+    margin-bottom: 30px;
+}
+.block2 ul li a:hover{
+    color:#0c4050;
+}
+
+.block3{
+    display:flex;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+}
+.block3 ul li{
+    color:white;
+    text-decoration: none;
+    font-size:1rem;
+    
+}
+.block3 ul li{
+    margin-bottom: 30px;
+}
+.block3 ul li a:hover{
+    color:#0c4050;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1) translateY(0); }
+    10% { transform: scale(1.2, 0.6); }
+    30% { transform: scale(0.8, 1.1) translateY(-5px); }
+    50% { transform: scale(1) translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program{
+    font-size: 50px,
+}
+
+.content{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main .content .card .left{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:#76C893;
+   color:#fff;
+}
+.main .content .card .right img{
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+.main .content .card .right{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:#76C893;
+    color: #fff;
+ }
+ .main .content .card .left img{
+     height:300px;
+     width: 400px;
+     margin-top: 5px;
+ }
+
+
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+}
