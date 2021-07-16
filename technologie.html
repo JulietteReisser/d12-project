@@ -13,11 +13,11 @@
                 </div>
     
                 <div class="onglets">
-                    <a href="#">Acceuil</a>
-                    <a class="programmes" href="#produits">Programmes 
+                    <a href="index.html">Acceuil</a>
+                    <a class="programmes" href="">Programmes 
                         <ul class="sousMenu">
-                            <li>Programmes technologiques</li>
-                            <li>Programmes écologiques</li>
+                            <li class="lien1">Programmes technologiques</li>
+                            <li class="lien2">Programmes écologiques</li>
                         </ul>
                     </a>
                     <a href="engagements.html">Nos Engagements</a>
@@ -87,10 +87,9 @@
             
             <div class="block2">
                 <ul>
-                    <li><a href="">Acceuil</a></li>
-                    <li><a href="">Programmes</a></li>
-                    <li><a href="">Nos Engagement</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="accueil.html">Acceuil</a></li>
+                    <li><a href="engagements.html">Nos Engagement</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
                 
@@ -107,4 +106,18 @@
             <p class="copyright">Copyright © 2021 Tommorow school. All rights reserved.</p>
         </footer>
     </body>
+    <script>
+        const lien1 = document.querySelector('.lien1');
+        const lien2 = document.querySelector('.lien2');
+
+        lien1.addEventListener("click" , ()=>{
+            console.log("ok")
+            document.location.href="technologie.html"; 
+            
+        });
+        lien2.addEventListener("click" , ()=>{
+            document.location.href="ecologique.html"; 
+        });
+    </script>
+
 </html>
