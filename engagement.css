@@ -388,7 +388,10 @@ nav .onglets a{
 nav .onglets a:hover{
     color:#0c4050;
 }
-.programmes:hover .sousMenu{
+.sousMenu{
+    display:none;
+}
+.programmes:hover .sousMenu {
     display:block;
     position:absolute;
     top:76%;
@@ -397,10 +400,7 @@ nav .onglets a:hover{
     background: #168AAD;
     color:#fff;
 }
-.sousMenu{
-    display:none;
-    
-}
+
 .sousMenu:hover{
     display:block;
 }
@@ -463,8 +463,8 @@ footer img{
     padding-top:5px;
     
 }
-.footerLogo h1{
-    
+.lien1, .lien2{
+    cursor: pointer;
 }
 .footerLogo{
     display:flex;

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="engagement.css">
+    
 </head>
 
 <body>
@@ -23,10 +24,10 @@
             
             <div class="onglets">
                 <a href="accueil.html">Acceuil</a>
-                <a class="programmes" >Programmes 
+                <a class="programmes">Programmes
                     <ul class="sousMenu">
-                        <li href="technologie.html">Programmes technologiques</li>
-                        <li href="ecologique.html">Programmes écologiques<</li>
+                        <li class="lien1">Programmes technologiques</li>
+                        <li class="lien2">Programmes écologiques</li>
                     </ul>
                 </a>
                 <a href="engagements.html">Nos Engagements</a>
@@ -110,6 +111,24 @@
         <p class="copyright">Copyright © 2021 Tommorow school. All rights reserved.</p>
     </footer>
 
+    
+    
+
 </body>
 
+    <script>
+        const lien1 = document.querySelector('.lien1');
+        const lien2 = document.querySelector('.lien2');
+
+        lien1.addEventListener("click" , ()=>{
+            console.log("ok")
+            document.location.href="technologie.html"; 
+            
+        });
+        lien2.addEventListener("click" , ()=>{
+            document.location.href="ecologique.html"; 
+        });
+    </script>
+
+        
 </html>
