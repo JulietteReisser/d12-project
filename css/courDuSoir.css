@@ -1,12 +1,22 @@
+/* color
+ 168AAD bleu
+ 76C893 vert
+ D9ED92 jaune
+ EDF7FC gris
+ */
+
 html {
-    background-color: darkorange;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: 'dosis', sans-serif;
 }
 
 .container {
-    background-color: green;
+    background-color: #168AAD;
 }
 
 body {
 
+}
+
+h1 {
+    font-family: 'Otomanopee One', sans-serif;
 }
