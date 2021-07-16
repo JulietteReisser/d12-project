@@ -1,6 +1,8 @@
 html {
 	color: #EDF7FC;
+	font-family: 'Helvetica', sans-serif;
 	height: 100%;
+	letter-spacing: 1px;
 }
 
 body {
@@ -8,22 +10,74 @@ body {
 	margin: 0;
 }
 
+h2 {
+	font-family: 'Dosis', sans-serif;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: 'Arial', sans-serif;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.formation-block {
+	background-color: none;
+	overflow: scroll;
+	position: fixed;
+	right: 5%;
+	top: 10%;
+}
+
+.card {
+	background-color: #ebf5ee4f;
+	border-radius: 15px;
+	color: #76C893;
+	margin: 5px;
+	opacity: 0.8;
+	padding: 10px;
+	width: 500px;
+}
+
+.card h3, .card p {
+	margin: 0;
+}
+
+.card p {
+	color: #a3dbb7;
+	font-size: 12px;
+}
+
 .main-block {
 	background-color: #168AAD;
-	bottom: 75px;
-	padding: 20px;
-	padding-left: 100px;
-	padding-right: 100px;
+	box-sizing: border-box;
+	color: #cbdadf;
+	bottom: 50px;
+	letter-spacing: 2px;
+	padding: 20px 100px;
 	position: fixed;
 	width: 100%;
 }
 
+.main-block h2 {
+	color: white;
+}
+
+.main-block h4 {
+	letter-spacing: 3px;
+}
+
 .arrow-block {
 	align-items: center;
-	background-color: #EDF7FC;
+	background-color: white;
 	bottom: 0;
 	color: #168AAD;
-	height: 75px;
+	height: 50px;
+	letter-spacing: 8px;
 	position: fixed;
 	text-align: center;
 	width: 100%;
