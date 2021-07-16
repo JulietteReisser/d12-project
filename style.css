@@ -1,16 +1,17 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+main{
+    margin-top: -45px;;
+}
 body{
-    margin: 15px;
-    padding: 0;
     background-color: white;
     display: grid;
     grid-template-rows: 10% 45% 45%;
     grid-template-areas: 
         "a1"
         "a2";
+    height:150vh;
 }
 
 h1{
@@ -32,13 +33,15 @@ h4{
 .titre0{
     grid-area: a1;
     justify-self: center;
+    text-align: center;
+    font-size:2rem;
+    padding: 2rem 0;
 }
 
 .display{
     grid-area: a2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -91,12 +94,14 @@ form textarea{
 .cont2{
     grid-area: bb;
     justify-self: center;
+    
 }
 
 .cont3{
     grid-area: cc;
     justify-self: center;
     padding-bottom: 5px;
+    
 }
 
 .cont3 button{
@@ -120,6 +125,8 @@ button:hover {
     grid-template-areas: 
         "aaaa aaaa"
         "bbbb bbbb";
+    font-size:1.7rem;
+    padding-left:2rem;
 }
 
 .titre2{
@@ -136,6 +143,8 @@ button:hover {
         "aaa aaa"
         "caa cbb";
     background-color: #168AAD;
+    font-size:1.5rem;
+    
 }
 
 .titre3{
@@ -146,12 +155,14 @@ button:hover {
 .coord1{
     padding: 5px;
     grid-area: caa;
+    padding-top:2rem;
 }
 
 .coord2{
     padding: 5px;
     grid-area: cbb;
 }
+
 
 
 nav{
@@ -314,6 +325,7 @@ footer img{
     color:#fff;
     align-items: center;
     justify-content: center;
+    
 }
 .block3 ul li{
     color:white;

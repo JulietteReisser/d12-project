@@ -5,93 +5,147 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E%22%3E">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
         <title>Nous contacter</title>
     </head>
 
     <body>
-        <div class="titre0">
-            <h1>Formulaire de contact</h1>
-        </div>        
-        <div class="display">
-                    <div class="c1">
-                        <div class="titre1">
-                            <h3>Contactez nous</h3>
-                        </div>                        
-                        <form action="" method="POST">
-                            <div class="cont1">
-                                <input type="radio" name="gender" id="mr" value="mr" checked>
-                                <label for="mr">Mr</label>
-                                <input type="radio" name="gender" id="mme" value="mme">
-                                <label for="mme">Mme</label>
-                                <input type="radio" name="gender" id="mut" value="mutant">
-                                <label for="mutant">Mutant</label>
-                                <br>
-                                <input type="text" id="lastname" placeholder="Votre prénom" required>
-                                <input type="text" id="firstname" placeholder="Votre nom" required>
-                                <br>
-                                <input type="text" id="age" placeholder="Votre âge" required>
-                                <br>
-                                <input type="email" id="email" placeholder="Votre mail" required>
-                                <input type="tel" id="tel" placeholder="Votre numéro de téléphone" required>
-                                <br>
-                                <input type="adress" id="adress" placeholder="Votre adresse postale" required>
-                                <br>
-                            </div>
-                            <div class="cont2">
-                                <textarea name="message" id="message" cols="50" rows="15" placeholder="Votre message"></textarea>
-                                <br>
-                                <input type="radio" name="type" id="parent">
-                                <label for="parent">Parent d'élève</label>
-                                <input type="radio" name="type" id="etudiant" checked>
-                                <label for="etudiant">Etudiant</label>
-                            </div>
-                            <div class="cont3">
-                                <button type="submit">Soumettre</button>
-                            </div>                       
-                        </form>
-                    </div>
-            <div class="c3">
-                <div class="titre2">
-                    <h3>Horaires d'ouverture</h3>
-                </div>                
-                <div class="horaire">
-                    <ul>
-                        <li><strong>Lundi : </strong></li>
-                        <li><strong>Mardi : </strong></li>
-                        <li><strong>Mercredi : </strong></li>
-                        <li><strong>Jeudi : </strong></li>
-                        <li><strong>Vendredi : </strong></li>
-                        <li><strong>Week-end & Jours fériés : </strong></li>
-                    </ul>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/leaf.png" alt=""><h1> Tomorrow School</h1>
                 </div>
                 
-            </div>
-            <div class="c4">
-                <div class="titre3">
-                    <h3>Coordonnées de l'école</h3>
-                </div>                
-                <div class="coord1">
-                    <h4>Adresse : </h4>
-                    6 Place Charles Hernu, 69100 - Villeurbanne
-                    <h4>Téléphone : </h4>
-                    04 04 04 04 04
-                    <h4>Retrouvez-nous sur les réseaux : </h4>
-                    <a href="https://www.facebook.fr">facebook</a>
-                    <a href="https://www.twitter.fr">Twitter</a>
-                    <a href="https://www.youtube.fr">YouTube</a>
+                <div class="onglets">
+                    <a href="index.html">Acceuil</a>
+                    <a class="programmes">Programmes
+                        <ul class="sousMenu">
+                            <li class="lien1">Programmes technologiques</li>
+                            <li class="lien2">Programmes écologiques</li>
+                        </ul>
+                    </a>
+                    <a href="engagements.html">Nos Engagements</a>
+                    <a href="stage.html">Stage</a>
+                    <a href="contact.html">Contact</a>
                 </div>
-                <div class="coord2">
-                    <h4>Plan d'accès : </h4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.018179131287!2d4.861707628936976!3d45.77082592228563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8b25d38030c2!2sIT-Akademy!5e0!3m2!1sfr!2sfr!4v1626361746312!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </nav>
+        </header>
+
+        <main>
+            <div class="titre0">
+                <h1>Formulaire de contact</h1>
+            </div>        
+            <div class="display">
+                        <div class="c1">
+                            <div class="titre1">
+                                <h3>Contactez nous</h3>
+                            </div>                        
+                            <form action="" method="POST">
+                                <div class="cont1">
+                                    <input type="radio" name="gender" id="mr" value="mr" checked>
+                                    <label for="mr">Mr</label>
+                                    <input type="radio" name="gender" id="mme" value="mme">
+                                    <label for="mme">Mme</label>
+                                    <input type="radio" name="gender" id="mut" value="mutant">
+                                    <label for="mutant">Mutant</label>
+                                    <br>
+                                    <input type="text" id="lastname" placeholder="Votre prénom" required>
+                                    <input type="text" id="firstname" placeholder="Votre nom" required>
+                                    <br>
+                                    <input type="text" id="age" placeholder="Votre âge" required>
+                                    <br>
+                                    <input type="email" id="email" placeholder="Votre mail" required>
+                                    <input type="tel" id="tel" placeholder="Votre numéro de téléphone" required>
+                                    <br>
+                                    <input type="adress" id="adress" placeholder="Votre adresse postale" required>
+                                    <br>
+                                </div>
+                                <div class="cont2">
+                                    <textarea name="message" id="message" cols="50" rows="15" placeholder="Votre message"></textarea>
+                                    <br>
+                                    <input type="radio" name="type" id="parent">
+                                    <label for="parent">Parent d'élève</label>
+                                    <input type="radio" name="type" id="etudiant" checked>
+                                    <label for="etudiant">Etudiant</label>
+                                </div>
+                                <div class="cont3">
+                                    <button type="submit">Soumettre</button>
+                                </div>                       
+                            </form>
+                        </div>
+                <div class="c3">
+                    <div class="titre2">
+                        <h3>Horaires d'ouverture</h3>
+                    </div>                
+                    <div class="horaire">
+                        <ul>
+                            <li><strong>Lundi : </strong></li>
+                            <li><strong>Mardi : </strong></li>
+                            <li><strong>Mercredi : </strong></li>
+                            <li><strong>Jeudi : </strong></li>
+                            <li><strong>Vendredi : </strong></li>
+                            <li><strong>Week-end & Jours fériés : </strong></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="c4">
+                    <div class="titre3">
+                        <h3>Coordonnées de l'école</h3>
+                    </div>                
+                    <div class="coord1">
+                        <h4>Adresse : </h4>
+                        6 Place Charles Hernu, 69100 - Villeurbanne
+                        <h4>Téléphone : </h4>
+                        04 04 04 04 04
+                        <h4>Retrouvez-nous sur les réseaux : </h4>
+                        <a href="https://www.facebook.fr">facebook</a>
+                        <a href="https://www.twitter.fr">Twitter</a>
+                        <a href="https://www.youtube.fr">YouTube</a>
+                    </div>
+                    <div class="coord2">
+                        <h4>Plan d'accès : </h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.018179131287!2d4.861707628936976!3d45.77082592228563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8b25d38030c2!2sIT-Akademy!5e0!3m2!1sfr!2sfr!4v1626361746312!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <footer>
+            <footer>
+                <div class="block1">
+                    <div class="footerLogo">
+                        <img src="img/leaf.png" alt=""><h1>Tomorrow School</h1>
+                    </div>
+                </div>
+                
+                <div class="block2">
+                    <ul>
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="engagements.html">Nos Engagement</a></li>
+                        <li><a href="stage.html">Stage</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                    
+                <div class="block3">
+                    <ul>
+                        <li>Adresse :</li>
+                        <li>23 Rue d'Arcole, Saint Etienne / 42001</li>
+                        <li>Tel : 04 77 49 91 91</li>
+                        <li>Mail : SaintEtienne@IT-STUDENTS.fr</li>
+                    </ul>
+                </div>
+        
+                <!-- <p class="contact" id="contact">Contact : 00 00 00 00 00 | &copy; 4022, Tomorrow School.</p> -->
+                <p class="copyright">Copyright © 2021 Tommorow school. All rights reserved.</p>
+            </footer>
+        </footer>
         
     </body>
 
